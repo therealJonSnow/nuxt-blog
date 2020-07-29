@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.10",
+    "contentful": "^7.14.6",
+    "dot-env": "^0.0.1",
+    "dotenv": "^8.2.0",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.14.0",
+    "sass-loader": "^9.0.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^2.1.0"
+  }
+}
