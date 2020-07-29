@@ -1,20 +1,16 @@
 <template>	
-<div class="">
-<h1 class="title">Paw Waves</h1>
-<section v-for="post in posts" :key="post.fields.slug">
-<div
-class="image"
-
-></div>
-<h2 class="title">
-<nuxt-link :to="post.fields.slug">{{ post.fields.title }}</nuxt-link>
-</h2>
-<p class="author">By {{ post.fields.author.fields.name }}</p>
-<p class="description">
-{{ post.fields.description }}<br />
-<nuxt-link :to="post.fields.slug" class="more">Read more ⟶</nuxt-link>
-</p>
-</section>
+<div class="container">
+	<h1 class="title">The Lost Buoy</h1>
+	<section v-for="post in posts" :key="post.fields.slug">
+		<h2 class="title">
+			<nuxt-link :to="post.fields.slug">{{ post.fields.title }}</nuxt-link>
+		</h2>
+		<p class="author">By {{ post.fields.author.fields.name }}</p>
+		<p class="description">
+			{{ post.fields.description }}<br />
+			<nuxt-link :to="post.fields.slug" class="more">Read more ⟶</nuxt-link>
+		</p>
+	</section>
 </div>
 
 </template>
@@ -28,12 +24,12 @@ export default {
     }
   },
   head: {
-    title: "Paw Waves, Latest Posts"
+    title: "The Lost Buoy"
   }
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
@@ -42,10 +38,7 @@ export default {
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .title {
