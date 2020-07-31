@@ -15,7 +15,9 @@
     "dotenv": "^8.2.0",
     "node-sass": "^4.14.1",
     "nuxt": "^2.14.0",
-    "sass-loader": "^9.0.2"
+    "sass-loader": "^9.0.2",
+    "lodash": ">=4.17.19",
+    "dot-prop": ">=5.1.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^2.1.0"
